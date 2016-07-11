@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="format-detection" content="telephone=no"/>
+
 	<style type="text/css">
 		.break {
 			clear: both;
@@ -71,20 +71,20 @@
 			font-style: italic;
 			padding: 0px 0px 10px 0px;
 		}
-		#topmenu {
+		#idTopMenu {
 			float: left;
 			position: relative;
 			left: -50%;
 			font-size: 1.2em;
 		}
-		#topmenu ul {
+		#idTopMenu ul {
 			margin: 0px 0px 0px 50px;
 			padding: 0px 0px 0px 0px;
 			position: relative;
 			float center;
 			left: 50%;
 		}
-		#topmenu li {
+		#idTopMenu li {
 			height: 18px;
 			list-style: none;
 			position:relative;
@@ -94,7 +94,7 @@
 			border-right: 1px solid #FFCE07;
 			padding: 10px 20px 12px 20px;
 		}
-		#topmenu li:hover {
+		#idTopMenu li:hover {
 			text-decoration: underline;
 		}
 		.selected {
@@ -189,7 +189,7 @@
 					<div id="title">Sunny Solutions</div>
 					<div id="tagline">Friendly Computer Services at a Reasonable Rate!</div>
 					
-					<div id="topmenu"><ul>
+					<div id="idTopMenu"><ul>
 						<li class= "selected"><a href="">Services</a></li>
 						<li class= "selected"><a href="">Apps</a></li>
 						<li class= "selected"><a href="">Docs</a></li>
@@ -210,10 +210,12 @@
 
 	<script type="text/javascript">
 		// Global variables.
+		var idTopMenu = "idTopMenu";
 		var idContent = "idContent";
+		
 		function fncOnLoad() {
 			// Select the default Services tab by default.
-			fncLoadContent("Services");
+//			fncLoadContent("Services");
 			alert("fncOnLoad()");
 		}
 		
@@ -222,20 +224,29 @@
 		}
 
 		function fncGetInnerHTML() {
-			var txtSelected = event.target.innerHTML;
-			return (txtSelected);
+			var strSelected = event.target.innerHTML;
+			return (strSelected);
 		}
 
-		function fncLoadContent(txtContent) {
+		function fncLoadContent(strContent) {
 			// Add code here to load the appropriate HTML file and put it in idContent.
-			document.getElementById(idContent).innerHTML = txtContent;
+			document.getElementById(idContent).innerHTML = strContent;
 		}
-	</script>
-		
-	<script type="text/javascript">
-		document.getElementById("topmenu").onclick = function() {
-			fncLoadContent(fncGetInnerHTML());
+
+		// First try with different reusable function calls. Doesn't work in Firefox.
+/*		document.getElementById(idTopMenu).onclick = function() {
+			var strSelected = fncGetInnerHTML();
+			fncLoadContent(strSelected);
+			alert("Check behind this message window for: <" + strSelected + ">");
 		}
+*/
+		// Second try with everything in a single function. Doesn't work in Firefox.
+		document.getElementById("idTopMenu").onclick = function() {
+			var strSelected = event.target.innerHTML;
+			document.getElementById("idContent").innerHTML = strSelected;
+			alert("Check behind this message window for: <" + strSelected + ">");
+		}
+
 	</script>
 </body>
 </html>
