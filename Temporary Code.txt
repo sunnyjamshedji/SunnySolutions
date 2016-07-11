@@ -1,0 +1,64 @@
+	<link rel="import" href="http://www.SunnySolutions.biz/Services.asp">
+	<link rel="import" href="Prices.html">
+	<link rel="import" href="Apps.html">
+	<link rel="import" href="Documents.html">
+	<link rel="import" href="Profile.html">
+
+Website:	https://admin.1and1.com
+
+Customer ID:	14355590
+
+Contract ID:	13770151
+
+PW:		he was here
+
+Name server 1:	ns57.1and1.com
+
+Name server 2:	ns58.1and1.com
+
+
+
+FTP Access:
+
+Username:	u44586922
+
+Password:	sunnyjamshedji
+
+Def Website:	ftp://www.s199226663.onlinehome.us
+
+Note:		Use Passive Transfers with some wireless routers.
+
+
+
+PublicFTP:
+
+FTP Site:	ftp://www.SunnySolutions.Biz/
+
+Username:	ftp44586922-0 (cut-n-paste to avoid errors!)
+
+Password:	0000000 (seven zeros)
+
+Usage:		ftp://ftp44586922-0:0000000@www.SunnySolutions.Biz/
+
+
+ftp://www.sunnysolutions.biz/Downloads/Media/TheSecret.mp4
+
+
+
+SuperLagit.Com:
+
+FTP Site:	ftp://www.SuperLagit.Com/
+
+Username:	ftp44586922-1 (cut-n-paste to avoid errors!)
+
+Password:	chicken17
+
+Usage:		ftp://ftp44586922-1:chicken17@www.SuperLagit.Com/
+
+
+Ref ID for Help: 129 787 553
+
+
+Ref ID for Sitemap Missing File List: 177 514 768
+
+Ref ID for MP4 MIME Type: 212 823 133
